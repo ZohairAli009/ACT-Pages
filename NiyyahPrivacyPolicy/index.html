@@ -7,93 +7,116 @@
 
     <style>
         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-                Helvetica, Arial, sans-serif;
-            background: #f5f7fa;
-            color: #222;
-            line-height: 1.7;
-        }
+:root{
+    --olive:#556B2F;
+    --gold:#C9A66B;
+    --background:#F8F7F2;
+    --text:#2F2F2F;
+    --card:#FFFFFF;
+}
 
-        .container {
-            max-width: 900px;
-            margin: 50px auto;
-            background: #fff;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,.08);
-            overflow: hidden;
-        }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.8;
+}
 
-        header {
-            background: #2563eb;
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: var(--card);
+    border-radius: 18px;
+    overflow: hidden;
+    border: 2px solid rgba(201,166,107,.35);
+    box-shadow: 0 12px 35px rgba(85,107,47,.12);
+}
 
-        header h1 {
-            font-size: 2.2rem;
-            margin-bottom: 10px;
-        }
+header {
+    background: linear-gradient(135deg, var(--olive), #465b26);
+    color: white;
+    padding: 45px;
+    text-align: center;
+    border-bottom: 5px solid var(--gold);
+}
 
-        header p {
-            opacity: .9;
-        }
+header h1 {
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+    color: var(--gold);
+    letter-spacing: .5px;
+}
 
-        .content {
-            padding: 35px;
-        }
+header p {
+    color: rgba(255,255,255,.9);
+}
 
-        section {
-            margin-bottom: 35px;
-        }
+.content {
+    padding: 40px;
+}
 
-        section:last-child {
-            margin-bottom: 0;
-        }
+section {
+    margin-bottom: 36px;
+}
 
-        h2 {
-            color: #2563eb;
-            margin-bottom: 12px;
-            border-bottom: 2px solid #e8eefc;
-            padding-bottom: 8px;
-        }
+section:last-child {
+    margin-bottom: 0;
+}
 
-        p {
-            white-space: pre-line;
-        }
+h2 {
+    color: var(--olive);
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(201,166,107,.5);
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #666;
-            font-size: .9rem;
-            background: #fafafa;
-            border-top: 1px solid #eee;
-        }
+p {
+    white-space: pre-line;
+    color: #444;
+}
 
-        @media (max-width: 700px) {
-            .container {
-                margin: 20px;
-            }
+a {
+    color: var(--olive);
+    font-weight: 600;
+    text-decoration: none;
+}
 
-            header {
-                padding: 30px 20px;
-            }
+a:hover {
+    color: var(--gold);
+}
 
-            .content {
-                padding: 25px;
-            }
+footer {
+    text-align: center;
+    padding: 22px;
+    background: var(--olive);
+    color: rgba(255,255,255,.9);
+    border-top: 4px solid var(--gold);
+}
 
-            header h1 {
-                font-size: 1.8rem;
-            }
-        }
+@media (max-width:700px) {
+
+    .container{
+        margin:20px;
+    }
+
+    header{
+        padding:32px 24px;
+    }
+
+    .content{
+        padding:28px 22px;
+    }
+
+    header h1{
+        font-size:1.9rem;
+    }
+}
     </style>
 </head>
 <body>
